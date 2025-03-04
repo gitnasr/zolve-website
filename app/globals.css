@@ -125,3 +125,53 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* Modern Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 90, 213, 0.2);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    transition: all 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 90, 213, 0.4);
+    background-clip: content-box;
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 90, 213, 0.2) transparent;
+  }
+  
+  /* For dark mode */
+  .dark ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(180, 160, 255, 0.2);
+    background-clip: content-box;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: rgba(180, 160, 255, 0.4);
+    background-clip: content-box;
+  }
+  
+  .dark html {
+    scrollbar-color: rgba(180, 160, 255, 0.2) transparent;
+  }
+}

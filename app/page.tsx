@@ -1,9 +1,16 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/hero";
+import HowToUse from "@/components/how-to";
 
 export default function Home() {
+
   return (
-    <div>
-      <Button>Click me</Button>
+    <div className="flex flex-col items-center justify-center pt-12">
+
+      <HeroSection />
+  
+
+    <HowToUse />
+
     </div>
 
   );

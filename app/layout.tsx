@@ -2,6 +2,7 @@ import "./globals.css";
 
 import { Geist, Geist_Mono } from "next/font/google";
 
+import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-
+      <Navbar/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
         <ThemeProvider
