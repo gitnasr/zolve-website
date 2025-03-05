@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zolve Website 🌐
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Official website for Zolve, an AI-powered browser extension designed to assist students during online exams.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Details
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Type**: Marketing Website
+- **Platform**: Next.js
+- **Primary Purpose**: Showcase Zolve Browser Extension
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Website Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Modern, responsive design
+- Animated hero section
+- Step-by-step usage explanation
+- Gradient-based color scheme
+- Dark/light mode support
 
-## Learn More
+## Technical Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 15
+- React
+- Tailwind CSS
+- Framer Motion
+- Shadcn/UI Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design Highlights
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Animated background gradients
+- Responsive layout
+- Smooth hover and interaction effects
+- Dark mode compatibility
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Quick Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Extension: [Chrome Web Store](#)
+- GitHub: [Zolve Extension](https://github.com/gitnasr/zolve)
+
+## Contact
+
+Created by (@gitnasr)
