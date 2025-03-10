@@ -7,9 +7,9 @@ import { Button } from "./ui/button"
 
 const HeroSection = () => {
     return (
-        <div className="relative flex flex-col items-center justify-center px-4 w-full min-h-screen overflow-hidden">
+        <div className="relative flex flex-col items-center justify-center w-full min-h-screen px-4 overflow-hidden">
             <motion.div 
-                className="absolute inset-0 bg-gradient-to-br from-purple-500/15 via-transparent to-orange-500/15 z-0"
+                className="absolute inset-0 z-0 bg-gradient-to-br from-purple-500/15 via-transparent to-orange-500/15"
                 animate={{
                     backgroundPosition: ['0% 0%', '100% 100%', '0% 0%']
                 }}
@@ -69,17 +69,17 @@ const HeroSection = () => {
 
             <div className="relative z-10 flex flex-col items-center max-w-4xl mx-auto">
                 <motion.div
-                    className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 backdrop-blur-sm"
+                    className="inline-flex items-center gap-2 px-4 py-2 mb-8 border rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-500/30 backdrop-blur-sm"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <Sparkles className="h-5 w-5 text-purple-400" />
+                    <Sparkles className="w-5 h-5 text-purple-400" />
                     <span className="text-base font-medium text-gray-200">AI-Powered Solutions</span>
                 </motion.div>
 
                 <motion.h4 
-                    className="scroll-m-20 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6 text-center max-w-3xl leading-tight text-white"
+                    className="max-w-3xl mb-6 text-3xl font-bold leading-tight tracking-tight text-center text-white scroll-m-20 sm:text-4xl md:text-5xl"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -88,7 +88,7 @@ const HeroSection = () => {
                 </motion.h4>
 
                 <motion.h1 
-                    className="scroll-m-20 text-6xl sm:text-7xl lg:text-8xl tracking-tight inline-block uppercase font-black text-transparent transition-all mb-10"
+                    className="inline-block mb-10 text-6xl font-black tracking-tight text-transparent uppercase transition-all scroll-m-20 sm:text-7xl lg:text-8xl"
                     style={{
                         WebkitBackgroundClip: 'text',
                         backgroundClip: 'text',
@@ -112,34 +112,34 @@ const HeroSection = () => {
                 </motion.h1>
 
                 <motion.div 
-                    className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 items-center mt-6 mb-10 w-full sm:w-auto"
+                    className="flex flex-col items-center w-full mt-6 mb-10 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 sm:w-auto"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.4 }}
                 >
                     <Button 
-                        className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white shadow-lg shadow-blue-500/30 border-0 transition-all hover:scale-105 py-8 px-8 text-lg"
-                        onClick={() => window.open("https://google.com")}
+                        className="w-full px-8 py-8 text-lg text-white transition-all border-0 shadow-lg sm:w-auto bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 shadow-blue-500/30 hover:scale-105"
+                        onClick={() => window.open("https://chromewebstore.google.com/detail/fcejfbaichedmmnejemkpdofjjelbgkp?utm_source=item-share-cb", "_blank")}
                     >
-                        <ChromeIcon className="mr-3 h-5 w-5" /> Get it From Chrome Web Store
+                        <ChromeIcon className="w-5 h-5 mr-3" /> Get it From Chrome Web Store
                     </Button>
                     
                     <Button 
-                        className="w-full sm:w-auto backdrop-blur-sm bg-white/15 border border-white/30 hover:bg-white/25 shadow-lg shadow-white/5 text-white transition-all hover:scale-105 py-8 px-8 text-lg"
+                        className="w-full px-8 py-8 text-lg text-white transition-all border shadow-lg sm:w-auto backdrop-blur-sm bg-white/15 border-white/30 hover:bg-white/25 shadow-white/5 hover:scale-105"
                         onClick={() => window.open("https://github.com/gitnasr/zolve", "_blank")}
                         variant="outline"
                     >
-                        <GithubIcon className="mr-3 h-5 w-5" /> From GitHub
+                        <GithubIcon className="w-5 h-5 mr-3" /> From GitHub
                     </Button>
                 </motion.div>
 
                 <motion.div
-                    className="max-w-sm px-5 py-2 rounded-md bg-white/10 backdrop-blur-sm border border-white/10"
+                    className="max-w-sm px-5 py-2 border rounded-md bg-white/10 backdrop-blur-sm border-white/10"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8, duration: 0.5 }}
                 >
-                    <p className="text-base text-center font-medium text-gray-200">
+                    <p className="text-base font-medium text-center text-gray-200">
                         * Supported Platforms: <span className="text-blue-400">Microsoft Forms</span>
                     </p>
                 </motion.div>

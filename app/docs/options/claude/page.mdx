@@ -1,0 +1,28 @@
+import { Callout } from 'nextra/components'
+
+# Claude Server
+
+<Callout emoji="⚠️">
+**Caution:** You **must** be logged into your Claude account on [Claude.ai](https://claude.ai) before using this feature, or it won't work.
+</Callout>
+
+Typically, configuration is not needed unless you want to use a custom server.
+
+### Legacy Support
+In **Version 1.0**, [see it here](https://github.com/gitnasr/zolve/releases/tag/extension-v1.0.1), we provided the Claude Python server. This server is still supported in **v2.0** to maintain compatibility. Since Claude is constantly improving, we will continue to support it.
+
+### What is the Claude Server We Provide?
+
+- The Claude API is quite expensive, so we **reverse-engineered** the Claude web service and developed a custom lightweight server.
+- This server uses the user's **current session** on Claude.ai to serve requests efficiently within the extension.
+
+### How It Works with the Extension
+
+1. Download the latest version of the Claude server from [here](https://github.com/gitnasr/claude-engine/releases/latest).
+2. Unzip the file and **run the `.exe` file**.
+3. When selecting **Claude** from the extension's context menu:
+   - The extension retrieves cookies from your **Claude.ai** session.
+   - These cookies are sent to the **Claude local server** running on your machine.
+   - The local server processes and forwards the requests, returning responses to the extension.
+
+> **Note:** The Claude Server runs on **port 3005**. Ensure no other applications are using this port to avoid conflicts.

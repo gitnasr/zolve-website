@@ -1,0 +1,36 @@
+# Cloudflare Workers
+
+Cloudflare Workers provide a **powerful and flexible** way to use free, open-source LLMs with a single API key. With models like **Deepseek, Llama**, and more, you can now integrate Cloudflare Workers directly into Zolve for exam solving.
+
+### What Do You Need to Configure It?
+
+#### 1. A Cloudflare Account
+- Sign up for a free Cloudflare account [here](https://cloudflare.com).
+
+#### 2. Generate API Credentials
+- Navigate to `ai/workers-ai/api-quick-start` from the Cloudflare sidebar.
+- **Copy your Account ID** (the first item displayed).
+- Click on **Create a Workers AI API Token**.
+- In the sidebar that appears, click **Create API Token**.
+- You'll be redirected to a page containing your **API Token**. **Copy and save it immediately**, as you won't be able to view it again.
+
+#### 3. Choose a Model
+- Go to the [Workers AI Catalog](https://developers.cloudflare.com/workers-ai/models/) and filter by **Text Generation**.
+- Select a model (e.g., **deepseek-r1-distill-qwen-32b**).
+- On the model’s page, locate the **Model ID** (it starts with `@cf`). **Copy it**.
+
+### Final Steps
+
+Now that you have:
+✅ **API Key**
+✅ **Account ID**
+✅ **Model Name**
+
+Follow these steps to configure it in the extension:
+
+1. Open the **Zolve Extension Options Page**.
+2. Scroll down to the **Cloudflare Workers** section.
+3. Paste your **Account ID**, **API Token**, and **Model Name**.
+4. Click **Save**.
+
+🚀 **You're all set! Cloudflare Workers is now configured for exam solving!**

@@ -1,6 +1,6 @@
 "use client"
 
-import { YoutubeIcon } from "lucide-react"
+import { Book } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "./ui/button"
@@ -18,12 +18,12 @@ const Navbar = () => {
                 </Link>
                 
                 <div className="flex items-center gap-4">
-                    <Link href="https://www.youtube.com/watch?v=L_zWCIdVDsw" target="_blank" rel="noopener noreferrer">
+                    <Link href="/docs" rel="noopener noreferrer">
                         <Button 
                             variant="ghost" 
                             className="flex items-center gap-2 text-sm hover:bg-primary/10 transition-all"
                         >
-                            <YoutubeIcon className="h-4 w-4 text-red-500" />
+                            <Book className="h-6 w-6 text-cyan-500" />
                             <span className="hidden sm:inline">How to Use</span>
                         </Button>
                     </Link>
